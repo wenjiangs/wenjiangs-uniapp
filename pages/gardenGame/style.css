@@ -1,0 +1,188 @@
+.ggMain{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.ggBg{
+  background: url(http://www.wenjiangs.com/wp-content/uploads/gardenGame/gameBg.jpg) no-repeat center;
+  height: 1869upx;
+  width: 750upx;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -934upx;
+}
+
+.titleBar{
+  height: 44px;
+  position: absolute;
+  width: 100%;
+  left:0;
+  top: 0;
+}
+
+.ggBottomBtn{
+  display: flex;
+  text-align: center;
+  padding: 0 20upx;
+  position: fixed;
+  bottom: 40upx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ggbbItem{
+  flex: 1;
+  transition: all .2s;
+  position: relative;
+}
+.ggbbItem button{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.ggbbItem.active{
+  transform: scale(1.2);
+}
+.ggbbItem img{
+  width: 146upx;
+  height: 146upx;
+}
+.ggTop{
+  position: absolute;
+  top:44px;
+  left: 0;
+  width: 100%;
+}
+
+.ggtUser{
+  float: left;
+  background: rgba(0,0,0,.3);
+  margin: 20upx;
+  border-radius: 60upx;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  padding-right: 30upx;
+  font-size: 28upx;
+  line-height: 60upx;
+}
+
+.ggtUser img{
+  height: 60upx;
+  width: 60upx;
+  border-radius: 60upx;
+  margin-right: 20upx;
+}
+.ggtCoin{
+  float: right;
+}
+
+.titleBarLeft{
+  height: 44px;
+  width: 44px;
+  margin-left: 30upx;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.titleBarLeft img{
+  height: 34upx;
+}
+
+.ggTree1{
+  width: 174upx;
+  height: 147upx;
+  position: absolute;
+  left: 50%;
+  margin-left: -87upx;
+  top: 950upx;
+}
+.ggTree1 img{
+  width: 174upx;
+  height: 147upx;
+}
+
+.ggTree2{
+  width: 187upx;
+  height: 243upx;
+  position: absolute;
+  left: 50%;
+  margin-left: -93upx;
+  top: 820upx;
+}
+.ggTree2 img{
+  width: 187upx;
+  height: 243upx;
+}
+
+.ggTree3{
+  width: 338upx;
+  height: 379upx;
+  position: absolute;
+  left: 50%;
+  margin-left: -152upx;
+  top: 708upx;
+}
+.ggTree3Tree{
+  position: absolute;
+}
+.ggTree3Tree img{
+  width: 338upx;
+  height: 379upx;
+}
+.ggTree3Hua{
+  position: absolute;
+  height: 149upx;
+  width: 285upx;
+  left: 30upx;
+  top: 30upx;
+}
+.ggTree3Hua img{
+  height: 149upx;
+  width: 285upx;
+}
+.ggTree3Guo{
+  position: absolute;
+  width: 238upx;
+  height: 160upx;
+  left: 36upx;
+  top:10upx;
+}
+.ggTree3Guo img{
+  width: 238upx;
+  height: 160upx;
+}
+
+.progress{
+  position: absolute;
+  height: 34upx;
+  width: 280upx;
+  background: #ad6327;
+  left: 50%;
+  margin-left: -140upx;
+  border-radius: 34upx;
+  top: 1160upx;
+  font-size: 24upx;
+  text-align: center;
+  color: #FFF;
+  z-index: 10;
+}
+
+.progressBar{
+  background: #f6ad4f;
+  height: 26upx;
+  width: 20%;
+  position: absolute;
+  z-index: 6;
+  margin: 4upx;
+  border-radius: 28upx;
+}
+
+.progressText{
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+}
+

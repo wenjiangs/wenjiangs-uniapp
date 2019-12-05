@@ -1,0 +1,282 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/view",
+      "style": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "文江博客",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/topic/view",
+      "style": {
+        "navigationBarTitleText": "话题"
+      }
+    },{
+      "path": "pages/message/view",
+      "style": {
+        "navigationBarTitleText": "通知"
+      }
+    },{
+      "path": "pages/docs/view",
+      "style": {
+        "navigationBarTitleText": "专栏"
+      }
+    },{
+      "path": "pages/ucenter/view",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },{
+      "path": "pages/single/view",
+      "style": {
+        "navigationBarTitleText": "文章详情"
+      }
+    },{
+      "path": "pages/page/view",
+      "style": {
+        "navigationBarTitleText": "加载中"
+      }
+    },{
+      "path": "pages/login/view",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },{
+      "path": "pages/docsSingle/view",
+      "style": {
+        "navigationBarTitleText": "专辑详情"
+      }
+    },{
+      "path": "pages/setting/view",
+      "style": {
+        "navigationBarTitleText": "设置"
+      }
+    },{
+      "path": "pages/baseInfoEdit/view",
+      "style": {
+        "navigationBarTitleText": "编辑基本信息"
+      }
+    },{
+      "path": "pages/loginLog/view",
+      "style": {
+        "navigationBarTitleText": "登录日志"
+      }
+    },{
+      "path": "pages/about/view",
+      "style": {
+        "navigationBarTitleText": "关于我们"
+      }
+    },{
+      "path": "pages/messageSingle/view",
+      "style": {
+        "navigationBarTitleText": "消息详情"
+      }
+    },{
+      "path": "pages/forgetMe/view",
+      "style": {
+        "navigationBarTitleText": "找回密码"
+      }
+    },{
+      "path": "pages/author/view",
+      "style": {
+        "navigationBarTitleText": "作者主页"
+      }
+    },{
+      "path": "pages/profile/view",
+      "style": {
+        "navigationBarTitleText": "个人资料"
+      }
+    },{
+      "path": "pages/passwordEdit/view",
+      "style": {
+        "navigationBarTitleText": "修改密码"
+      }
+    },{
+      "path": "pages/phoneEdit/view",
+      "style": {
+        "navigationBarTitleText": "修改手机号"
+      }
+    },{
+      "path": "pages/emailEdit/view",
+      "style": {
+        "navigationBarTitleText": "修改邮箱"
+      }
+    },{
+      "path": "pages/userPost/view",
+      "style": {
+        "navigationBarTitleText": "我的文章"
+      }
+    },{
+      "path": "pages/userComment/view",
+      "style": {
+        "navigationBarTitleText": "我的评论"
+      }
+    },{
+      "path": "pages/userTopic/view",
+      "style": {
+        "navigationBarTitleText": "我的话题"
+      }
+    },{
+      "path": "pages/userReply/view",
+      "style": {
+        "navigationBarTitleText": "我的回复"
+      }
+    },{
+      "path": "pages/userCollection/view",
+      "style": {
+        "navigationBarTitleText": "我的收藏"
+      }
+    },{
+      "path": "pages/scanConfirmLogin/view",
+      "style": {
+        "navigationBarTitleText": "扫码登录"
+      }
+    },{
+      "path": "pages/search/view",
+      "style": {
+        "navigationBarTitleText": "搜索"
+      }
+    },{
+      "path": "pages/scanResult/view",
+      "style": {
+        "navigationBarTitleText": "扫码结果"
+      }
+    },{
+      "path": "pages/topicGroup/view",
+      "style": {
+        "navigationBarTitleText": "小组列表"
+      }
+    },{
+      "path": "pages/topicGroupSingle/view",
+      "style": {
+        "navigationBarTitleText": "小组话题列表"
+      }
+    },{
+      "path": "pages/publishPost/view",
+      "style": {
+        "navigationBarTitleText": "发布文章"
+      }
+    },{
+      "path": "pages/publishTopic/view",
+      "style": {
+        "navigationBarTitleText": "发布话题"
+      }
+    },{
+      "path": "pages/report/view",
+      "style": {
+        "navigationBarTitleText": "内容举报"
+      }
+    },{
+      "path": "pages/publishPost2/view",
+      "style": {
+        "navigationBarTitleText": "发布文章"
+      }
+    },{
+      "path": "pages/register/view",
+      "style": {
+        "navigationBarTitleText": "注册账号"
+      }
+    },{
+      "path": "pages/messageCard/view",
+      "style": {
+        "navigationBarTitleText": "卡片消息"
+      }
+    },{
+      "path": "pages/userFans/view",
+      "style": {
+        "navigationBarTitleText": "我的关注"
+      }
+    },{
+      "path": "pages/gardenGame/view",
+      "style": {
+        "navigationBarTitleText": "花园",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },{
+      "path": "pages/userCoin/view",
+      "style": {
+        "navigationBarTitleText": "我的金币"
+      }
+    },{
+      "path": "pages/userCoinList/view",
+      "style": {
+        "navigationBarTitleText": "金币明细"
+      }
+    },{
+      "path": "pages/coinGoodsSingle/view",
+      "style": {
+        "navigationBarTitleText": "商品详情",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    },{
+      "path": "pages/coinShop/view",
+      "style": {
+        "navigationBarTitleText": "金币商城",
+        "navigationBarBackgroundColor": "#303030",
+        "navigationBarTextStyle": "white"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "文江博客",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#0894ec",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [{
+        "pagePath": "pages/index/view",
+        "iconPath": "/static/img/nav_03.png",
+        "selectedIconPath": "/static/img/nav_18.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/topic/view",
+        "iconPath": "/static/img/nav_05.png",
+        "selectedIconPath": "/static/img/nav_19.png",
+        "text": "话题"
+      },
+      {
+        "pagePath": "pages/docs/view",
+        "iconPath": "/static/img/nav_09.png",
+        "selectedIconPath": "/static/img/nav_21.png",
+        "text": "专栏"
+      },
+      {
+        "pagePath": "pages/ucenter/view",
+        "iconPath": "/static/img/nav_11.png",
+        "selectedIconPath": "/static/img/nav_22.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "condition" : { //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式(list 的索引项)
+    "list": [
+      {
+        "name": "", //模式名称
+        "path": "", //启动页面，必选
+        "query": "" //启动参数，在页面的onLoad函数里面得到
+      }
+    ]
+  }
+}

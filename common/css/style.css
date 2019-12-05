@@ -1,0 +1,2527 @@
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid #EEE;
+  background: #F8F8F8;
+}
+
+.staticPage {
+  background: #F8F8F8;
+}
+
+uni-page-head .uni-btn-icon {
+  margin-top: 4px;
+}
+
+.statusBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 110;
+  /* #ifdef MP-QQ */
+  background: #FFF;
+  /* #endif */
+}
+
+.statusBar.active {
+  background: #FFF;
+}
+
+.banner {
+  background: url(~@/static/img/default_banner.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.wjsp {
+  display: inline-block;
+}
+
+.noPageBorder {
+  border: none;
+}
+
+.plaClass {
+  color: #CCC;
+  font-style: normal;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.mySwiper {
+  height: 400px;
+}
+
+.mySwiper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tab标签页 */
+.tabBox {
+  height: calc(88upx + 1px);
+  position: relative;
+  z-index: 6000;
+}
+
+.tabs {
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid #EEE;
+  background: #FFF;
+  height: 88upx;
+  line-height: 88upx;
+  width: 100%;
+}
+
+.tabItem {
+  flex: 1;
+  font-size: 32upx;
+  height: 88upx;
+  color: #555;
+}
+
+.tabItem.active {
+  border-bottom: #0894ec 1px solid;
+  color: #0894ec;
+  font-weight: 500;
+}
+
+.tabFixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* #ifdef H5 */
+  top: 40px;
+  /* #endif */
+}
+
+.isFullpage {
+  top: 0px;
+}
+
+/* 首页文章列表 */
+.postItem {
+  padding: 32upx 20upx;
+  overflow: hidden;
+  border-bottom: 1px solid #EEE;
+  background: #FFF;
+}
+
+.plTitle {
+  font-size: 36upx;
+  font-weight: 500;
+  position: relative;
+  color: #333;
+  line-height: 48upx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 500;
+}
+
+.wjModel {
+  display: inline-block;
+  margin-right: 32upx;
+  font-size: 26upx;
+}
+
+.wjModel.pull-right {
+  margin-right: 0;
+  padding-top: 4upx;
+}
+
+.plThumb {
+  margin-left: 20upx;
+  float: right;
+  width: 200upx;
+  height: 150upx;
+  overflow: hidden;
+}
+
+.plThumb img {
+  width: 200upx;
+  height: 150upx;
+  display: block;
+  border: 1px solid #EEE;
+  box-sizing: border-box;
+}
+
+.plMeta {
+  color: #666;
+  padding-top: 8upx;
+}
+
+.plMul {
+  overflow: hidden;
+  padding: 16upx 0 0 0;
+}
+
+.plMul view {
+  box-sizing: border-box;
+  width: 230upx;
+  float: left;
+  margin-right: 10upx;
+  height: 172.5upx;
+  border: 1px solid #EEE;
+  overflow: hidden;
+}
+
+.plMul view img {
+  width: 230upx;
+  margin-right: 0;
+  height: 172.5upx;
+  display: block;
+}
+
+.plMul view:last-child {
+  margin-right: 0;
+}
+
+/*暂无内容*/
+.seatEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.seatIcon {
+  background: url(~@/static/img/empty.png) no-repeat center;
+  height: 80px;
+  width: 200px;
+  background-size: auto 100%;
+}
+
+.seatText {
+  font-size: 28upx;
+  color: #999;
+  text-align: center;
+  padding-top: 14px;
+}
+
+/*文章页*/
+.singleTools {
+  padding: 0 20upx;
+  box-sizing: border-box;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.singleToolsItem {
+  padding: 10upx 0;
+  color: #666;
+  flex: 1;
+  font-size: 24upx;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.singleToolsItem i {
+  display: block;
+  font-size: 42upx;
+}
+
+.singleTools~.wjContent {
+  padding-bottom: 104upx;
+}
+
+.singleTools~.content {
+  padding-bottom: 100upx;
+}
+
+.maskBg {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  transition: .5s;
+}
+
+.publishComment {
+  position: fixed;
+  bottom: 0;
+  z-index: 1001;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
+  transition: .5s;
+}
+
+.pubText {
+  padding: 4upx 12upx 18upx;
+}
+
+.pubText textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 32upx;
+}
+
+.pubTools {
+  overflow: hidden;
+}
+
+.pubTools view {
+  padding: 16upx 24upx;
+  font-size: 32upx;
+}
+
+.pubTools .pull-left {
+  color: #999;
+}
+
+.pubTools .pull-right {
+  color: #0894ec;
+}
+
+.singleHead {
+  padding: 12upx 0 24upx;
+  border-bottom: 1px solid #EEE;
+  background: #FFF;
+}
+
+.singleTitle {
+  font-size: 40upx;
+  padding: 12upx 24upx 24upx;
+  font-weight: 500;
+}
+
+.singleContent {
+  font-size: 32upx;
+  padding: 24upx 0;
+  color: #333;
+  background: #FFF;
+}
+
+.tiTop {
+  overflow: hidden;
+  padding: 24rpx;
+}
+
+.singTop.tiTop {
+  padding: 8upx 20upx 0;
+  overflow: hidden;
+}
+
+.titUserName {
+  font-size: 32upx;
+  line-height: 34upx;
+  color: #333;
+  margin-top: 20upx;
+}
+
+.titUserMeta {
+  line-height: 32upx;
+  padding: 24upx 20upx 0;
+  color: #666;
+}
+
+.wjMod {
+  background: #FFF;
+  margin: 12upx 0;
+}
+
+.wjModTilte {
+  overflow: hidden;
+  font-size: 36upx;
+  padding: 28upx 30upx 24upx;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.wjModTilteTxt {
+  line-height: 52upx;
+  font-weight: 500;
+}
+
+.wjModMore {
+  font-size: 28upx;
+  color: #999;
+  padding-top: 6upx;
+}
+
+.wjModMore i {
+  font-size: 28upx;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.recItem {
+  overflow: hidden;
+  padding: 30upx 20upx;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.recItem:last-child {
+  border: none;
+}
+
+.recTitle {
+  font-size: 36upx;
+  padding-bottom: 4upx;
+  line-height: 48upx;
+  font-weight: 500;
+}
+
+.recImage {
+  width: 200upx;
+  height: 150upx;
+  text-align: right;
+  border: 1px solid #EEE;
+  overflow: hidden;
+  margin-left: 20upx;
+}
+
+.recImage image {
+  width: 200upx;
+  height: 150upx;
+}
+
+.recMeta {
+  color: #999;
+}
+
+.titAvatar {
+  width: 80upx;
+  height: 80upx;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.titAvatar image {
+  width: 80upx;
+  height: 80upx;
+}
+
+.titText {
+  margin-left: 96upx;
+  overflow: hidden;
+}
+
+.titText .btn {
+  border-radius: 3px;
+  margin-top: 12upx;
+}
+
+.btn {
+  text-align: center;
+  font-size: 30upx;
+  background: #fff;
+  border: 1px solid #DDD;
+  height: 84upx;
+  line-height: 78upx;
+  box-sizing: border-box;
+  padding: 0 24upx;
+  border-radius: 5px;
+  overflow: hidden;
+  color: #999;
+}
+
+.btn-small {
+  height: 50upx;
+  line-height: 46upx;
+  font-size: 24upx;
+}
+
+.btn-small .iconfont.icon-jia {
+  font-size: 32upx;
+}
+
+.btn .iconfont {
+  font-size: 36upx;
+  vertical-align: middle;
+  position: relative;
+  top: -3upx;
+}
+
+.btn-primary {
+  background: #0894ec;
+  color: #fff;
+  border-color: #0894ec;
+}
+
+button[type=primary] {
+  color: #FFFFFF;
+  background-color: #1AAD19;
+}
+
+.btn-primary.btn-empty {
+  color: #0894ec;
+  background: #FFF;
+}
+
+.btn-danger {
+  background: #f56c6c;
+  color: #fff;
+  border-color: #f56c6c;
+}
+
+.btn-danger.btn-empty {
+  color: #f56c6c;
+  background: #FFF;
+}
+
+.btn-success {
+  background: #1AAD19;
+  color: #fff;
+  border-color: #1AAD19;
+}
+
+.btn-success.btn-empty {
+  color: #1AAD19;
+  background: #FFF;
+}
+
+.btn-radius {
+  border-radius: 40upx;
+}
+
+/* 评论 */
+.docsCommentBox {
+  background: #FFF;
+}
+
+.commentsItem {
+  padding: 24upx 0;
+  border-bottom: 1px solid #f0f0f0;
+  background: #FFF;
+}
+
+.wt-comment-content {
+  padding: 0 0 0 10upx;
+  font-size: 28upx;
+  line-height: 36upx;
+  color: #333;
+}
+
+.wt-comment-content .richBox {
+  padding-bottom: 0;
+}
+
+.wt-comment-content rich-text {
+  font-size: 32upx;
+  line-height: 52upx;
+}
+
+.wjModel.commentAuthor {
+  font-weight: 500;
+  color: #333;
+  font-size: 30upx;
+  max-width: 400upx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.comment_floor {
+  font-size: 28upx;
+  color: #999;
+  margin-top: 2upx;
+}
+
+.wt-comments-tools {
+  padding: 0 30upx;
+  color: #999;
+  line-height: 28upx;
+}
+
+.wt-comments-info {
+  line-height: 32upx;
+  padding: 0 20upx 4upx;
+  overflow: hidden;
+}
+
+.wt-avatar {
+  width: 80upx;
+  height: 80upx;
+  margin-left: 24upx;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.wt-avatar image {
+  width: 80upx;
+  height: 80upx;
+}
+
+.wt-comments-text {
+  margin-left: 92upx;
+}
+
+.wt-comment-content .wxParse {
+  line-height: 1.5;
+}
+
+/* 登录 */
+.formItem {
+  margin: 36upx;
+  overflow: hidden;
+  font-size: 32upx;
+  color: #666;
+}
+
+.formControl {
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  height: 86upx;
+  width: 100%;
+  padding: 0 24upx;
+  font-size: 30upx;
+  box-sizing: border-box;
+  background: #FFF;
+  line-height: 80upx;
+  vertical-align: middle;
+}
+
+.imgCode {
+  height: 88upx;
+  width: 220upx;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.imgCode img {
+  height: 88upx;
+  width: 220upx;
+}
+
+.formControlMul {
+  padding: 12upx 18upx;
+  height: 400upx;
+}
+
+.formControl:focus {
+  border-color: #0894ec;
+}
+
+.formItemAgreement {
+  font-size: 28upx;
+  overflow: hidden;
+}
+
+.formItemAgreement input {
+  vertical-align: middle;
+}
+
+.formItemAgreement view {
+  color: #0894ec;
+  display: inline;
+}
+
+.lrlInfo {
+  font-size: 28upx;
+  text-align: center;
+  color: #999;
+}
+
+.formItemText {
+  font-size: 28upx;
+  color: #999;
+  margin-bottom: 36upx;
+}
+
+.lrFormWrap {}
+
+.lrFormWrapBox {
+  width: 100%;
+}
+
+.lrLogo {
+  width: 140upx;
+  height: 140upx;
+  margin: 60upx auto;
+}
+
+.lrLogo img {
+  width: 140upx;
+  height: 140upx;
+  border-radius: 2rem;
+  display: block;
+}
+
+.regOtherText {
+  text-align: center;
+  padding-top: 42upx;
+  font-size: 28upx;
+  color: #999;
+}
+
+.regOther {
+  display: flex;
+  text-align: center;
+  margin: 30upx auto 50upx;
+  width: 560upx;
+}
+
+.regOther view {
+  flex: 1;
+  position: relative;
+}
+
+.regOther view button {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 15;
+}
+
+.regOther view i {
+  height: 88upx;
+  width: 88upx;
+  color: #FFF;
+  line-height: 88upx;
+  font-size: 56upx;
+  border-radius: 88upx;
+  background: #0894ec;
+  display: block;
+  margin: auto;
+}
+
+.regOther view .wjsp-weibo {
+  background: #f6383a;
+}
+
+.regOther view .wjsp-weixin,
+.regOther view .wjsp-douban {
+  background: #2ac845;
+}
+
+.regOther view .wjsp-icon_baidulogo {
+  background: #00F;
+}
+
+.formControlSms {
+  width: 420upx;
+  float: left;
+}
+
+.formControlSmsBtn {
+  width: 220upx;
+  float: right;
+}
+
+/* 用户中心 */
+.uHead {
+  overflow: hidden;
+  padding: 36upx 24upx;
+  margin-bottom: 10upx;
+  background: url(static/img/right.png) no-repeat calc(100% - 24upx) center #FFF;
+  background-size: auto 24upx;
+}
+
+.uAvatar {
+  height: 110upx;
+  width: 110upx;
+  border-radius: 100upx;
+  float: left;
+  overflow: hidden;
+}
+
+.uAvatar img {
+  height: 110upx;
+  width: 110upx;
+}
+
+.uName {
+  font-size: 36upx;
+  padding-top: 4upx;
+  margin-left: 134upx;
+  font-weight: 500;
+}
+
+.uID {
+  font-size: 28upx;
+  padding-top: 8upx;
+  margin-left: 134upx;
+}
+
+.uFastTools {
+  text-align: center;
+  display: flex;
+  color: #999;
+  background: #FFF;
+  font-size: 30upx;
+}
+
+.uftItem {
+  flex: 1;
+  padding: 24upx 0;
+}
+
+.uftiN {
+  font-size: 36upx;
+  color: #FD7700;
+  padding-top: 4upx;
+  font-weight: 500;
+}
+
+.wjList {
+  background: #FFF;
+  margin: 10upx 0;
+}
+
+.wjListCell {
+  overflow: hidden;
+  padding-left: 20upx;
+  background: url(static/img/right.png) no-repeat calc(100% - 24upx) center;
+  background-size: auto 24upx;
+}
+
+.wjListIcon {
+  float: left;
+  height: 60upx;
+  margin: 24upx 0;
+  width: 60upx;
+  background-size: 100% auto;
+}
+
+.wjListIcon .wjsp {
+  line-height: 60upx;
+  height: 60upx;
+  width: 60upx;
+  text-align: center;
+  font-size: 40upx;
+}
+
+.wjListIcon .wjsp-liaotian2 {
+  font-size: 48upx;
+}
+
+.wjListIcon .wjsp-xiaoxi {
+  font-size: 44upx;
+}
+
+.wjListText {
+  font-size: 32upx;
+  padding: 24upx 0;
+  line-height: 60upx;
+  border-bottom: 1px solid #EEE;
+}
+
+.wjListCell:last-child .wjListText {
+  border: none;
+}
+
+.wjListIcon~.wjListText {
+  margin-left: 74upx;
+}
+
+.wjListTN {
+  float: right;
+  text-align: right;
+  max-width: 500upx;
+  font-weight: normal;
+  margin-right: 56upx;
+  color: #999;
+}
+
+.wjListTT {
+  line-height: 48upx;
+  margin-right: 60upx;
+  padding: 6upx 0;
+}
+
+.wjListTN input {
+  text-align: right;
+  height: 60upx;
+}
+
+.mulText .wjListText {
+  height: auto;
+  overflow: hidden;
+}
+
+.mulText .wjListTN {
+  line-height: 42upx;
+  padding: 8upx 0;
+}
+
+.wjListTN textarea {
+  width: 500upx;
+  line-height: 48upx;
+  text-align: right;
+  height: 200upx;
+}
+
+.wjListTN .uni-textarea-textarea {
+  text-align: right;
+}
+
+.settingList .wjListText {
+  color: #999;
+}
+
+.settingList .wjListTN {
+  color: #333;
+}
+
+.plaClass {
+  color: #CCC;
+}
+
+.diImage {
+  border-radius: 3px;
+  overflow: hidden;
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.docsItem {
+  overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 32upx 20rpx;
+  background: #FFF;
+}
+
+.diTitle {
+  font-size: 34rpx;
+  font-weight: 500;
+  padding-top: 4upx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.diText {
+  margin-left: 184rpx;
+}
+
+.diInfo {
+  font-size: 28rpx;
+  margin: 16rpx 0 12upx;
+  color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.diMeta {
+  line-height: 32rpx;
+  color: #999;
+}
+
+.docsDescription {
+  font-size: 28rpx;
+  line-height: 42rpx;
+  color: #333;
+  padding: 24rpx 0;
+  background: #FFF;
+}
+
+.topicList {
+  overflow: hidden;
+}
+
+.topicItem {
+  background: #fff;
+  overflow: hidden;
+  margin: 10rpx 0;
+}
+
+.topicItem .singleToolsItem {
+  font-size: 28upx;
+}
+
+.topicPage {
+  background: #f4f4f4;
+}
+
+.tiFooter {
+  position: static;
+}
+
+.tiFooter i {
+  display: inline-block;
+  position: relative;
+  top: -1rpx;
+  font-size: 32rpx;
+  vertical-align: middle;
+  margin-right: 8upx;
+}
+
+.tiFooter span {
+  vertical-align: middle;
+}
+
+.tiFooter .singleToolsItem {
+  padding: 18rpx 0;
+}
+
+.titUserMeta {
+  line-height: 32rpx;
+  padding-top: 8rpx;
+}
+
+.topicItem:last-child {
+  margin-bottom: 0;
+}
+
+.tiAloneContent {
+  padding: 0 24rpx 24rpx;
+}
+
+.tiContent {
+  font-size: 30rpx;
+  line-height: 46rpx;
+  color: #333;
+}
+
+.topicImgList {
+  padding: 0 6rpx 24rpx 24rpx;
+  overflow: hidden;
+}
+
+
+.topicImgItem {
+  width: 33.3333%;
+  float: left;
+  height: 222rpx;
+  overflow: hidden;
+}
+
+.topicImgItem image {
+  width: 222rpx;
+  height: 222rpx;
+  display: block;
+}
+
+.singleImg {
+  width: 520rpx;
+  height: 390rpx;
+}
+
+.singleImg image {
+  width: 520rpx;
+  height: 390rpx;
+  display: block;
+}
+
+.topicItem .titUserName {
+  margin-top: 2upx;
+  font-weight: 500;
+}
+
+.topicItem .titUserMeta {
+  padding: 7upx 0 0;
+}
+
+.docsMenu .wjList {
+  margin-bottom: 0;
+}
+
+.stAvatar {
+  overflow: hidden;
+  line-height: 120upx;
+}
+
+.wjListTA {
+  border-radius: 100upx;
+  margin-right: 72upx;
+  height: 120upx;
+  width: 120upx;
+  float: right;
+  overflow: hidden;
+}
+
+.wjListTA img {
+  display: block;
+  height: 120upx;
+  width: 120upx;
+}
+
+.wjListTE {
+  clear: both;
+}
+
+.wjListTE textarea {
+  width: 100%;
+  background: #F8F8F8;
+  padding: 10upx 16px;
+}
+
+.listBlockTitle {
+  font-size: 28upx;
+  margin: 40upx 20upx 20upx;
+  color: #999;
+}
+
+.listBlockTitle i {
+  float: right;
+  font-style: normal;
+}
+
+.bottomButton {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottomButton .btn {
+  border-radius: 0;
+  line-height: 84upx;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.pubTit {
+  margin: 20upx 0;
+}
+
+.pubTit input {
+  margin: 20upx 0;
+  background: #FFF;
+  padding: 16upx 20upx;
+  font-size: 32upx;
+}
+
+.pubText {
+  padding: 0;
+  margin: 20upx 0;
+}
+
+.pubText textarea {
+  background: #FFFF;
+  padding: 16upx 20upx;
+  font-size: 32upx;
+}
+
+.pubImage {
+  background: #FFF;
+  padding: 0 20upx;
+}
+
+.bottomButton~.content {
+  bottom: 82upx;
+}
+
+.wjListCellNoRight {
+  background: none;
+}
+
+.wjListCellNoRight .wjListTN {
+  margin-right: 20upx;
+}
+
+.wjListCellNoRight .wjListTA {
+  margin-right: 20upx;
+}
+
+.llItem {
+  display: flex;
+  background: #FFF;
+  border-bottom: 1px solid #EEE;
+  padding: 20upx;
+  font-size: 24upx;
+}
+
+.llItem view {
+  flex: 1;
+}
+
+.lliTime {
+  color: #999;
+}
+
+.systemInfo {
+  font-size: 30upx;
+  text-align: center;
+  line-height: 48upx;
+  position: relative;
+  top: -30upx;
+}
+
+.systemInfoTop {
+  background: #FFF;
+  overflow: hidden;
+}
+
+.appVersion {
+  padding-top: 8upx;
+  font-size: 24upx;
+  color: #999;
+}
+
+.msgItem {
+  overflow: hidden;
+  padding: 24rpx;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.msgRightBtn {
+  height: 100upx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msgRightBtn~.msgText {
+  margin-right: 150upx;
+}
+
+.msgImage {
+  height: 100rpx;
+  width: 100rpx;
+  position: relative;
+}
+
+.msgImage image {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 100rpx;
+}
+
+.noReadBadge {
+  background: #ff112d;
+  top: -8rpx;
+  right: -8rpx;
+  color: #FFF;
+  position: absolute;
+  height: 36rpx;
+  width: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  border-radius: 36rpx;
+  font-size: 24rpx;
+}
+
+.msgText {
+  margin-left: 118rpx;
+}
+
+.msgTitle {
+  font-size: 32rpx;
+  padding-top: 4rpx;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.msgTitle view {
+  font-size: 28rpx;
+  padding-top: 2rpx;
+  color: #999;
+  font-weight: normal;
+}
+
+.msgSummary {
+  font-size: 28rpx;
+  color: #999;
+  padding-top: 8rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.sendMsgBox {
+  z-index: 55;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20upx 30upx;
+  box-sizing: border-box;
+}
+
+.smbList {
+  overflow: hidden;
+}
+
+.smbBtn {
+  width: 120rpx;
+}
+
+.smbBtn .btn {
+  font-size: 28rpx;
+  border-radius: 40upx;
+  height: 66upx;
+  line-height: 62upx;
+}
+
+.smbInput {
+  min-height: 62rpx;
+  box-sizing: border-box;
+  margin-right: 200rpx;
+}
+
+.smbInput textarea {
+  width: 100%;
+  font-size: 30rpx;
+  background: #FFF;
+  border-radius: 40upx;
+  padding: 15upx 24upx;
+}
+
+.smbItem {
+  overflow: hidden;
+  margin: 36rpx 24rpx;
+}
+
+.smbAvatar {
+  height: 84rpx;
+  width: 84rpx;
+  overflow: hidden;
+  border-radius: 80rpx;
+}
+
+.smbAvatar image {
+  height: 84rpx;
+  width: 84rpx;
+}
+
+.smbNotice {
+  text-align: center;
+}
+
+.smbNotice view {
+  background: #fff;
+  color: #666;
+  padding: 4rpx 24rpx;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  display: inline-block;
+}
+
+.smbText {
+  color: #666;
+  margin-left: 36rpx;
+  background: #fff;
+  font-size: 32rpx;
+  padding: 20rpx 32rpx;
+  border-radius: 3px;
+  position: relative;
+  max-width: 500rpx;
+}
+
+.smbContent {
+  word-break: break-all;
+}
+
+.smbText:after {
+  content: '';
+  width: 18rpx;
+  height: 18rpx;
+  background-color: #FFF;
+  left: -10rpx;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 38rpx;
+}
+
+.smbRight .smbText {
+  margin: 0 36rpx 0 0;
+}
+
+.smbRight .smbText:after {
+  left: auto;
+  right: -10rpx;
+}
+
+.smbSys {
+  background: #FFF;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.smbSysImage {
+  width: 702rpx;
+  height: 351rpx;
+}
+
+.smbSysImage image {
+  width: 702rpx;
+  height: 351rpx;
+}
+
+.smbSysText {
+  padding: 24rpx 24rpx 8rpx;
+  font-size: 32rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.smbSysInfo {
+  font-size: 28rpx;
+  color: #999;
+  padding: 0 24rpx 24rpx;
+  line-height: 42rpx;
+}
+
+.smbOnlyText {
+  background: #FFF;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.smbOnlyTextTitle {
+  font-size: 36rpx;
+  margin: 24rpx 24rpx 8rpx;
+  font-weight: 500;
+}
+
+.smbOnlyTextCon {
+  font-size: 32rpx;
+  margin: 24rpx 24rpx 32rpx;
+}
+
+.smbOnlyTextTo {
+  color: #0894ec;
+  font-size: 32rpx;
+  border-top: 1px solid #EEE;
+  padding: 24rpx;
+  background: url(http://www.wenjiangs.com/wp-content/themes/wtheme/images/right.png) no-repeat calc(100% - 24rpx) center;
+  background-size: auto 32rpx;
+}
+
+.smbOnlyTextTime {
+  margin: 8rpx 24rpx 24rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.smbItemOrso {
+  background: #FFF;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.smbItemOrsoImage {
+  width: 200rpx;
+  height: 150rpx;
+}
+
+.smbItemOrsoImage image {
+  width: 200rpx;
+  height: 150rpx;
+}
+
+.smbItemOrsoText {
+  margin-left: 224rpx;
+}
+
+.smbItemOrsoTitle {
+  font-size: 32rpx;
+  padding: 16rpx 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.smbItemOrsoInfo {
+  color: #999;
+  font-size: 28rpx;
+  height: 76rpx;
+  overflow: hidden;
+}
+
+.userBg {
+  background: url(https://www.wenjiangs.com/wp-content/themes/wtheme/images/userBg.jpg) no-repeat center;
+  background-size: cover;
+  height: 200rpx;
+}
+
+.authorTotal {
+  position: relative;
+  padding: 36rpx 24rpx;
+  background: #FFF;
+}
+
+.auAvatar {
+  position: absolute;
+  height: 180rpx;
+  width: 180rpx;
+  overflow: hidden;
+  border-radius: 180rpx;
+  top: -36rpx;
+}
+
+.auAvatar image {
+  height: 180rpx;
+  width: 180rpx;
+}
+
+.auText {
+  padding-left: 204rpx;
+}
+
+.auTotal text {
+  color: #333;
+  font-size: 32rpx;
+  margin-right: 8upx;
+}
+
+.authorDo {
+  background: #FFF;
+  padding: 0 24rpx 24rpx;
+  position: relative;
+  height: 72rpx;
+  border-bottom: 1px solid #EEE;
+}
+
+.authorDo .btn {
+  width: 252rpx;
+  height: 72rpx;
+  line-height: 68upx;
+}
+
+.authorDo .btn-success.btn-empty {
+  margin-left: 24rpx;
+}
+
+.authorDo .btn.auDoMore {
+  width: 150rpx;
+}
+
+.authorDo .btn.auDoMore .iconfont {
+  font-size: 48rpx;
+}
+
+.authorDo .btn i {
+  margin-right: 8upx;
+  font-size: 40upx;
+  vertical-align: middle;
+  position: relative;
+  top: -4upx;
+}
+
+.authorDo .btn view {
+  display: inline-block;
+  position: relative;
+  top: -6upx;
+  vertical-align: middle;
+}
+
+.dropDown {
+  right: 24rpx;
+  top: 92rpx;
+  position: absolute;
+  z-index: 6660;
+  background: #FFF;
+  box-shadow: 0 0 1px #666;
+  padding: 12rpx 0;
+  border-radius: 3px;
+}
+
+.ddItem {
+  font-size: 28rpx;
+  color: #666;
+  padding: 16rpx 24rpx;
+  width: 200rpx;
+}
+
+.ddItem i {
+  margin-right: 8upx;
+  position: relative;
+  bottom: -4upx;
+}
+
+.dropDown:before {
+  height: 24rpx;
+  width: 24rpx;
+  background: #FFF;
+  transform: rotate(45deg);
+  box-shadow: 0 0 1px #AAA;
+  content: '';
+  z-index: 43;
+  top: -10rpx;
+  position: absolute;
+  right: 63rpx;
+}
+
+.dropDown:after {
+  height: 32rpx;
+  width: 56rpx;
+  background: #FFF;
+  content: '';
+  z-index: 43;
+  top: 0rpx;
+  position: absolute;
+  right: 52rpx;
+}
+
+.ddItemShare {
+  position: relative;
+}
+
+.ddItemShare button {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  opacity: 0;
+}
+
+.commentListPost {
+  background: #F6F6F6;
+  padding: 16upx 24upx 20upx;
+  margin: 12upx 24upx 16upx 32upx;
+}
+
+.commentListPostTit {
+  font-weight: 500;
+  font-size: 32upx;
+}
+
+.commentListPostMeta {
+  line-height: 1.1;
+  color: #999;
+  padding-top: 4upx;
+}
+
+.singleContentHtml {
+  background: #FFF;
+  padding: 20upx;
+  font-size: 32upx;
+  line-height: 52upx;
+}
+
+.singleContentHtml img {
+  max-width: 100%;
+  height: auto;
+}
+
+.singleContentHtml p {
+  margin-bottom: 20upx;
+}
+
+.singleContentHtml p:last-child {
+  margin-bottom: 0;
+}
+
+.singleContentHtml pre,
+.singleContentHtml tt,
+.singleContentHtml code,
+.singleContentHtml kbd {
+  font-family: monospace;
+}
+
+.singleContentHtml pre {
+  overflow: auto;
+  background: #282c34;
+  padding: 16upx 20rpx;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 12upx 0;
+  font-size: 24upx;
+  color: #abb2bf;
+}
+
+.singleContentHtml h2 {
+  font-size: 40upx;
+  line-height: 58upx;
+  margin-bottom: 20upx;
+}
+
+.singleContentHtml ul {
+  font-size: 28upx;
+  margin-bottom: 20upx;
+}
+
+.singleContentHtml pre code {
+  background: none;
+  color: #abb2bf;
+  padding: 0;
+  margin: 0;
+}
+
+.singleContentHtml code {
+  display: inline-block;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  margin: 0 10upx;
+  font-size: 28upx;
+  padding: 0 8upx;
+  vertical-align: middle;
+  border-radius: 2px;
+  line-height: 32upx;
+}
+
+/* 富文本 */
+.richBox {
+  background: #FFF;
+  padding: 0 20upx 20upx;
+  overflow: hidden;
+}
+
+rich-text {
+  font-size: 34upx;
+  line-height: 56upx;
+  word-break: break-all;
+}
+
+.rich-h1 {
+  font-size: 46upx;
+  margin: 20upx 0;
+}
+
+.rich-h2 {
+  font-size: 42upx;
+  margin: 20upx 0;
+}
+
+.rich-h3 {
+  font-size: 38upx;
+  margin: 20upx 0;
+}
+
+.rich-h4,
+.rich-h5,
+.rich-h6 {
+  font-size: 32upx;
+  margin: 20upx 0;
+}
+
+.rich-img {
+  max-width: 710upx;
+  height: auto;
+}
+
+.rich-p {
+  margin: 20upx 0;
+  font-size: 30upx;
+  line-height: 48upx;
+}
+
+.rich-code {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  font-size: 30upx;
+  padding: 0 8upx;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.rich-ul {
+  padding-left: 52upx;
+  font-size: 30upx;
+  margin: 20upx 0;
+  line-height: 46upx;
+}
+
+.rich-pre {
+  background: #282c34;
+  padding: 16upx 20rpx;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 12upx 0;
+  font-size: 28upx;
+  color: #abb2bf;
+  line-height: 40upx;
+  border-radius: 3px;
+}
+
+.rich-pre .rich-code {
+  background: none;
+  color: #abb2bf;
+  padding: 0;
+  margin: 0;
+}
+
+.rich-table {
+  font-size: 28upx;
+  border-left: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 20upx 0;
+}
+
+.rich-th,
+.rich-td {
+  border-top: 1px solid #EEE;
+  border-right: 1px solid #EEE;
+  padding: 10upx 20upx;
+}
+
+.homeTopTools {
+  overflow: hidden;
+  position: absolute;
+  z-index: 55;
+  color: #333;
+  padding: 0 20upx 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.homeTopTools2 {
+  position: fixed;
+  width: 750upx;
+  z-index: 6005;
+  height: 45px;
+  line-height: 45px;
+  left: 0;
+  top: 0;
+  background: #FFF;
+  border-bottom: 1px solid #EEE;
+  box-sizing: border-box;
+}
+
+.searchForm {
+  float: left;
+  width: calc(100% - 154upx);
+  position: relative;
+  height: 44px;
+}
+
+.sweep {
+  float: left;
+  margin-right: 36upx;
+  z-index: 66;
+}
+
+.sweepSearch {
+  left: 16upx;
+}
+
+.pageSweep {
+  float: right;
+  margin: 0;
+  line-height: 64upx;
+}
+
+.sweep i {
+  font-size: 38upx;
+}
+
+.sweepMessage i {
+  font-size: 48upx;
+}
+
+.sweep i.wjsp-sousuo {
+  font-size: 40upx;
+}
+
+.searchTxt {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  background: #EFEFEF;
+  border-radius: 40upx;
+  font-size: 30upx;
+  height: 32px;
+  line-height: 64upx;
+  color: #666;
+  margin: 6px 0;
+  padding-left: 66upx;
+}
+
+.homeTopTools .searchTxt {
+  background: rgba(255, 255, 255, .4);
+  color: #FFF;
+}
+
+.searchTxt i {
+  display: inline-block;
+  margin-right: 8upx;
+  /* vertical-align: middle; */
+}
+
+.sclIcon {
+  text-align: center;
+  padding: 60upx 0;
+}
+
+.sclIcon i {
+  font-size: 210upx;
+  color: #999;
+}
+
+.sclInfo {
+  font-size: 34upx;
+  text-align: center;
+  color: #222;
+  padding: 0 0 20upx;
+  line-height: 52upx;
+}
+
+.sclInfo i {
+  display: inline-block;
+  color: #0894EC;
+  margin: 0 8upx;
+}
+
+.sclBtn {
+  padding: 20upx 60upx;
+}
+
+.sclBtn .btn {
+  margin-bottom: 30upx;
+}
+
+.sPageTop {
+  padding: 20upx;
+  background: #FFF;
+  border-bottom: 1px solid #EEE;
+  height: 64upx;
+}
+
+.sPageTop .searchTxt {
+  text-align: left;
+  padding: 0 26upx;
+}
+
+.sPageTop .sweep {
+  font-size: 32upx;
+  color: #0894EC;
+}
+
+.sPageTop .searchForm {
+  width: calc(100% - 90rpx);
+}
+
+.needAuthLayer {
+  background: rgba(255, 255, 255, .9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nalInfo {
+  font-size: 32upx;
+  margin: 30upx auto 60upx;
+  text-align: center;
+  color: #666;
+  max-width: 560upx;
+  line-height: 48upx;
+}
+
+.needAuthLayer .btn {
+  width: 240upx;
+  margin: 0 15upx;
+  display: inline-block;
+}
+
+.scanResultContent {
+  padding: 30upx;
+  background: #FFF;
+  word-break: break-all;
+}
+
+.scanResultContent .wjContent {
+  border: 1px solid #EEE;
+  padding: 20upx;
+  margin: 30upx 0;
+}
+
+.fixedPub {
+  position: fixed;
+  z-index: 666;
+  right: 30upx;
+  bottom: 30upx;
+  background: #00A0E9;
+  color: #FFF;
+  border-radius: 80upx;
+  text-align: center;
+  height: 100upx;
+  width: 100upx;
+  font-size: 28upx;
+  /* #ifdef H5 */
+  bottom: 130upx;
+  /* #endif */
+}
+
+.fixedPub i {
+  display: block;
+  font-size: 36upx;
+  padding: 10upx 0 2upx;
+}
+
+.editor-toolbar~.content {
+  top: 80upx;
+}
+
+.editorBtn~.content {
+  bottom: 84upx;
+}
+
+.editor-toolbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #FFF;
+  border-bottom: 1px solid #EEE;
+  line-height: 80upx;
+  display: flex;
+}
+
+.editor-toolbar view {
+  flex: 1;
+  text-align: center;
+}
+
+.editor-toolbar i {
+  font-size: 18px;
+}
+
+.ql-container,
+.editor-container {
+  height: 100%;
+  width: 100%;
+}
+
+.ql-container {
+  padding: 30upx;
+  font-size: 30upx;
+  font-style: normal;
+}
+
+.editorBtn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+.whuifu {
+  transform: rotateY(180deg);
+}
+
+.reportTxt {
+  background: #FFF;
+  padding: 20upx 24upx;
+}
+
+.reportTxt textarea {
+  font-size: 30upx;
+}
+
+.repUser {
+  padding: 24upx;
+  background: #FFF;
+}
+
+.repuImage {
+  height: 80upx;
+  width: 80upx;
+  border-radius: 80upx;
+  overflow: hidden;
+  float: left;
+}
+
+.repuImage img {
+  height: 80upx;
+  width: 80upx;
+}
+
+.repuName {
+  line-height: 80upx;
+  margin-left: 100upx;
+  font-size: 30upx;
+}
+
+.scanVideo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.forgetMecontactUs {
+  position: relative;
+}
+
+.forgetMecontactUs button {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.pageDeepBg {
+  background: #EFEFEF;
+}
+
+.msgTop {
+  border-bottom: 1px solid #EEE;
+  display: flex;
+  background: #FFF;
+}
+
+.msgTopItem {
+  flex: 1;
+  text-align: center;
+  padding: 30upx 0;
+  font-size: 24upx;
+  color: #999;
+}
+
+.msgTopText {
+  padding-top: 10upx;
+}
+
+.msgTopImage {
+  height: 100upx;
+  width: 100upx;
+  margin: auto;
+  position: relative;
+}
+
+.msgTopItem img {
+  height: 100upx;
+  width: 100upx;
+  overflow: hidden;
+  display: block;
+  border-radius: 100upx;
+}
+
+.msgCard {
+  overflow: hidden;
+}
+
+.msgCardItem {
+  margin: 24upx;
+  background: #FFF;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.msgCardItem:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.msgCardTop {
+  background: #F8F8F8;
+  overflow: hidden;
+  font-size: 28upx;
+  padding: 0 24upx;
+  line-height: 80upx;
+  color: #666;
+}
+
+.msgCardTime {
+  float: right;
+}
+
+.msgCardTit {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.msgCardContent {
+  font-size: 30upx;
+  overflow: hidden;
+}
+
+.msgCardContent .commentListPost {
+  margin: 0 20upx 20upx;
+}
+
+.msgCardContent .commentListPost {
+  margin-top: 20upx;
+}
+
+.msgCardContent .msgCardText+.commentListPost {
+  margin-top: 0;
+}
+
+.msgCardText .richBox {
+  padding-bottom: 0;
+  font-size: 30upx;
+  line-height: 44upx;
+}
+
+.msgCardComment .richBox {
+  background: none;
+  padding-bottom: 0;
+}
+
+.msgCardComment {
+  background: #F6F6F6;
+  margin: 0 20upx 20upx;
+}
+
+.msgCardAvatar,
+.msgCardAvatar img {
+  height: 50upx;
+  width: 50upx;
+  overflow: hidden;
+  border-radius: 50upx;
+  display: block;
+}
+
+.msgCardAvatar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.msgCardName {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20upx 0 10upx;
+}
+
+.uCoinTop {
+  color: #FFF;
+  padding: 0 40upx 100upx;
+  background: url(~@/static/img/coinBg.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.uCoinTopVal {
+  font-size: 56upx;
+  text-align: center;
+  margin: 30upx 0 0;
+}
+
+.uCoinTopLabel {
+  font-size: 28upx;
+  padding: 4upx 0 20upx 0;
+  text-align: center;
+}
+
+.tick {
+  height: 140upx;
+}
+
+.tickBox {
+  border-radius: 5px;
+  background: #FFF;
+  margin: 0 20upx;
+  padding: 20upx;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  position: relative;
+  top: -80upx;
+}
+
+.tickBox2 {
+  display: flex;
+  text-align: center;
+  font-size: 24upx;
+  color: #666;
+  padding: 10upx 0;
+  justify-content: space-between;
+}
+
+.tickBox2:before {
+  position: absolute;
+  height: 2px;
+  background: #DDD;
+  content: '';
+  left: 60upx;
+  width: 600upx;
+  top: 106upx;
+}
+
+.tickItem {
+  flex: 1;
+  position: relative;
+  z-index: 6;
+}
+
+.tickCoin {
+  height: 60upx;
+  width: 60upx;
+  background: #F4F4F4;
+  border-radius: 50upx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #AAA;
+  margin: auto;
+}
+
+.tickDate {
+  padding-top: 10upx;
+}
+
+.tickItem.active .tickCoin {
+  background-image: linear-gradient(90deg, #fcae44, #fdd892);
+  box-shadow: 1px 1px 5px rgba(252, 175, 70, .3);
+  color: #FFF;
+}
+
+.uCoinInfo {
+  font-size: 28upx;
+  font-weight: bold;
+  padding-bottom: 10upx;
+}
+
+.getCoinRule {
+  position: absolute;
+  right: 0;
+  top: 40upx;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 30upx 0 0 30upx;
+  padding: 12upx 20upx;
+  z-index: 666;
+  color: #FFF;
+  font-size: 24upx;
+}
+
+.uCoinBtn {
+  display: flex;
+  margin: 20upx auto 40upx;
+  width: 520upx;
+}
+
+.uCoinBtn .btn {
+  flex: 1;
+  margin: 0 20upx;
+  background: none;
+  height: 60upx;
+  line-height: 56upx;
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.coinTask {
+  overflow: hidden;
+}
+
+.coinTaskItem {
+  overflow: hidden;
+  margin: 0 20upx;
+  padding-top: ;
+  border-bottom: 1px solid #EEE;
+  padding: 30upx 0;
+}
+
+.coinTaskItem:last-child {
+  border-bottom: none;
+}
+
+.ctiTit {
+  font-size: 32upx;
+  font-weight: bold;
+  color: #333;
+}
+
+.ctiTitSub {
+  font-size: 28upx;
+  color: #999;
+  padding-top: 6upx;
+}
+
+.ctiLeft.pull-right {
+  height: 86upx;
+  display: flex;
+  align-items: center;
+}
+
+.lookCoin {
+  margin-top: 20upx;
+}
+
+.lookCoin img {
+  width: 100%;
+}
+
+.coinShopBanner {
+  width: 690upx;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(247, 88, 65, .6);
+  position: relative;
+  z-index: 130;
+}
+
+.coinShopBanner img {
+  overflow: hidden;
+  display: block;
+  width: 690upx;
+  height: 289upx;
+}
+
+.coinShopBannerBg {
+  position: absolute;
+  z-index: 44;
+  height: 300upx;
+  background: #303030;
+  width: 100%;
+  overflow: hidden;
+}
+
+.coinShopBannerBg view {
+  background: #FFF;
+  border-radius: 300upx 300upx 0 0;
+  height: 300upx;
+  position: absolute;
+  bottom: -120upx;
+  z-index: 45;
+  left: -75upx;
+  width: 900upx;
+  transform: scaleY(.4);
+}
+
+.coinNav {
+  display: flex;
+  background: #FFF;
+  padding: 30upx 20upx;
+  position: relative;
+  z-index: 120;
+}
+
+.coinNavItem {
+  flex: 1;
+  text-align: center;
+  font-size: 28upx;
+  font-weight: bold;
+  color: #333;
+}
+
+.coinNavItem img {
+  height: 140upx;
+  width: 140upx;
+  display: block;
+  margin: auto;
+}
+
+.goodsList {
+  overflow: hidden;
+}
+
+.goodsListItem {
+  overflow: hidden;
+  margin: 30upx;
+}
+
+.goodsImage {
+  height: 260upx;
+  width: 260upx;
+  float: left;
+}
+
+.goodsImage img {
+  height: 260upx;
+  width: 260upx;
+}
+
+.goodsTxt {
+  margin-left: 280upx;
+  height: 260upx;
+}
+
+.goodsTxt h3 {
+  font-size: 34upx;
+  font-weight: bold;
+  height: 88upx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #333;
+}
+
+.goodsTxt p {
+  font-size: 24upx;
+  color: #999;
+}
+
+.goodsTag {
+  font-size: 24upx;
+  padding: 16upx 0 36upx 0;
+}
+
+.goodsTag span {
+  color: #f54029;
+  display: inline-block;
+  border: 1px solid #F54029;
+  border-radius: 3px;
+  padding: 4upx 10upx;
+}
+
+.goodsPrices {
+  color: #F54029;
+  font-size: 30upx;
+}
+
+.goodsPrices text {
+  font-size: 34upx;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 4upx;
+}
+
+.goodsTxt2 {
+  position: relative;
+  width: 100%;
+}
+
+.goodsTxt2 .btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.goodsListNormal{
+  overflow: hidden;
+}
+
+.goodsLIstItemNormal{
+  margin: 30upx;
+  width: 330upx;
+  float: left;
+  text-align: center;
+}
+
+.glinImage{
+  width: 330upx;
+  height: 330upx;
+}
+.glinImage img{
+  width: 330upx;
+  height: 330upx;
+}
+.goodsLIstItemNormal:nth-child(2n){
+  margin-left: 0;
+}
+.glinTit{
+  font-size: 34upx;
+  padding: 16upx 0 4upx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.glinPreces{
+  font-size: 28upx;
+  color: #f54029;
+}
+.glinPreces text{
+  font-size: 34upx;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 4upx;
+}
