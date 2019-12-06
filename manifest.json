@@ -120,9 +120,9 @@
             },
             "splashscreen" : {
                 "android" : {
-                    "xxhdpi" : "E:/myCode/部分界面/ui/5bbc7a0021f6d.png",
-                    "xhdpi" : "E:/myCode/部分界面/ui/5bbc7a0021f6d.png",
-                    "hdpi" : "E:/myCode/部分界面/ui/5bbc7a0021f6d.png"
+                    "xxhdpi" : "unpackage/res/startPage/1.png",
+                    "xhdpi" : "unpackage/res/startPage/1.png",
+                    "hdpi" : "unpackage/res/startPage/1.png"
                 }
             }
         },
