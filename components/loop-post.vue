@@ -3,7 +3,7 @@
 		<view class="postList" v-if="posts.length>0">
 		  <view class="postItem" v-for="(item, index) in posts" :key="index"
         @click="wjRouterPush({path:'single', query:{type:item.post_type, id:item.ID}})">
-		    <view class="plThumb" v-if="item.thumbnails && item.thumbnails.length<3">
+		    <view class="plThumb" v-if="item.thumbnails && !isEmpty(item.thumbnails) && item.thumbnails.length<3">
 		      <img :src="item.thumbnails[0]">
 		    </view>
 		    <view class="plTitle">{{item.title}}</view>
@@ -25,7 +25,7 @@
 		    <view class="seatText">没有更多内容了</view>
 		  </view>
 		</view>
-    <uni-load-more v-if="posts.length>0" :status="noMore?'noMore':'loading'"></uni-load-more>
+    <uni-load-more v-if="posts.length>0 && showLoading" :status="noMore?'noMore':'loading'"></uni-load-more>
 	</view>
 </template>
 
@@ -43,6 +43,10 @@
       isLoading: {
         type: Boolean,
         default: false,
+      },
+      showLoading: {
+        type: Boolean,
+        default: true,
       }
     },
 		data() {

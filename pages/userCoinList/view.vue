@@ -1,17 +1,14 @@
 <template>
   <view class="page">
     <view class="content">
-      <scroll-view :scroll-y="true">
+      <scroll-view scroll-y="true"
+        :style="'height:' + svHeight + 'px;'"
+        @scrolltolower="loadData">
         <view class="ucList">
-          <view class="ucListItem">
-            <view class="uclVal pull-right">+1</view>
-            <view class="uclTit">每日签到</view>
-            <view class="uclDate">2019-12-7 11:50:57</view>
-          </view>
-          <view class="ucListItem">
-            <view class="uclVal pull-right active">+1</view>
-            <view class="uclTit">每日签到</view>
-            <view class="uclDate">2019-12-7 11:50:57</view>
+          <view class="ucListItem" v-for="(item, index) in dataList" :key="index">
+            <view class="uclVal pull-right" :class="item.integral_value>0?'active':''">{{item.integral_value}}</view>
+            <view class="uclTit">{{item.integral_remarks}}</view>
+            <view class="uclDate">{{item.integral_date}}</view>
           </view>
         </view>
         <uni-load-more :status="noMore?'noMore':'loading'"></uni-load-more>

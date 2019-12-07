@@ -1,9 +1,9 @@
 <template>
   <view class="page noPageBorder">
     <view class="content">
-      <view class="getCoinRule">金币获取规则</view>
+      <view class="getCoinRule" @click="wjRouterPush({path:'page', query:{id:86585}})">金币获取规则</view>
       <view class="uCoinTop">
-        <view class="uCoinTopVal">5425</view>
+        <view class="uCoinTopVal">{{userInfo.user_coin}}</view>
         <view class="uCoinTopLabel">我的剩余金币</view>
         <view class="uCoinBtn">
           <view class="btn btn-empty btn-small btn-radius" @click="wjRouterPush('userCoinList')">金币明细</view>
@@ -14,9 +14,10 @@
         <view class="tickBox">
           <view class="uCoinInfo">每日签到赚金币</view>
           <view class="tickBox2">
-            <view class="tickItem active" v-for="(item, index) in 7" :key="index">
-              <view class="tickCoin">+{{index}}</view>
-              <view class="tickDate">11.2{{index}}</view>
+            <view class="tickItem" :class="item.is_sign?'active':''" @click="userSign(item, index)" v-for="(item, index) in signDate"
+              :key="index">
+              <view class="tickCoin">{{item.sign_val}}</view>
+              <view class="tickDate">{{item.time}}</view>
             </view>
           </view>
         </view>
@@ -68,10 +69,7 @@
               <view class="ctiTitSub">浇水种树果实成熟得金币</view>
             </view>
             <view class="ctiLeft pull-right">
-              <view
-                class="btn btn-danger btn-small btn-radius"
-                @click="wjRouterPush('gardenGame')"
-              >去看看</view>
+              <view class="btn btn-danger btn-small btn-radius" @click="wjRouterPush('gardenGame')">去看看</view>
             </view>
           </view>
         </view>

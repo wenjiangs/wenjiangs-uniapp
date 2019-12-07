@@ -6,10 +6,12 @@
   bottom: 0;
   border-top: 1px solid #EEE;
   background: #F8F8F8;
+  color: #333;
 }
 
 .staticPage {
   background: #F8F8F8;
+  color: #333;
 }
 
 uni-page-head .uni-btn-icon {
@@ -57,6 +59,7 @@ uni-page-head .uni-btn-icon {
   bottom: 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  color: #333;
 }
 
 .pull-right {
@@ -153,10 +156,14 @@ uni-page-head .uni-btn-icon {
 
 /* 首页文章列表 */
 .postItem {
-  padding: 32upx 20upx;
+  padding: 32upx 30upx;
   overflow: hidden;
   border-bottom: 1px solid #EEE;
   background: #FFF;
+}
+
+.postItem:last-child{
+  border-bottom: none;
 }
 
 .plTitle {
@@ -200,18 +207,19 @@ uni-page-head .uni-btn-icon {
 }
 
 .plMeta {
-  color: #666;
+  color: #999;
   padding-top: 8upx;
 }
 
 .plMul {
   overflow: hidden;
   padding: 16upx 0 0 0;
+  margin-right: -20upx;
 }
 
 .plMul view {
   box-sizing: border-box;
-  width: 230upx;
+  width: 225upx;
   float: left;
   margin-right: 10upx;
   height: 172.5upx;
@@ -220,7 +228,7 @@ uni-page-head .uni-btn-icon {
 }
 
 .plMul view img {
-  width: 230upx;
+  width: 225upx;
   margin-right: 0;
   height: 172.5upx;
   display: block;
@@ -358,7 +366,7 @@ uni-page-head .uni-btn-icon {
 }
 
 .singTop.tiTop {
-  padding: 8upx 20upx 0;
+  padding: 8upx 30upx 0;
   overflow: hidden;
 }
 
@@ -371,7 +379,7 @@ uni-page-head .uni-btn-icon {
 
 .titUserMeta {
   line-height: 32upx;
-  padding: 24upx 20upx 0;
+  padding: 24upx 30upx 0;
   color: #666;
 }
 
@@ -402,41 +410,6 @@ uni-page-head .uni-btn-icon {
   font-size: 28upx;
   vertical-align: middle;
   display: inline-block;
-}
-
-.recItem {
-  overflow: hidden;
-  padding: 30upx 20upx;
-  border-bottom: 1px solid #f4f4f4;
-}
-
-.recItem:last-child {
-  border: none;
-}
-
-.recTitle {
-  font-size: 36upx;
-  padding-bottom: 4upx;
-  line-height: 48upx;
-  font-weight: 500;
-}
-
-.recImage {
-  width: 200upx;
-  height: 150upx;
-  text-align: right;
-  border: 1px solid #EEE;
-  overflow: hidden;
-  margin-left: 20upx;
-}
-
-.recImage image {
-  width: 200upx;
-  height: 150upx;
-}
-
-.recMeta {
-  color: #999;
 }
 
 .titAvatar {
@@ -1700,7 +1673,7 @@ button[type=primary] {
 /* 富文本 */
 .richBox {
   background: #FFF;
-  padding: 0 20upx 20upx;
+  padding: 0 30upx 20upx;
   overflow: hidden;
 }
 
@@ -2179,10 +2152,6 @@ rich-text {
   margin-top: 20upx;
 }
 
-.msgCardContent .msgCardText+.commentListPost {
-  margin-top: 0;
-}
-
 .msgCardText .richBox {
   padding-bottom: 0;
   font-size: 30upx;
@@ -2196,7 +2165,7 @@ rich-text {
 
 .msgCardComment {
   background: #F6F6F6;
-  margin: 0 20upx 20upx;
+  margin: 20upx;
 }
 
 .msgCardAvatar,
@@ -2341,7 +2310,7 @@ rich-text {
 
 .coinTaskItem {
   overflow: hidden;
-  margin: 0 20upx;
+  margin: 0 30upx;
   padding-top: ;
   border-bottom: 1px solid #EEE;
   padding: 30upx 0;
@@ -2570,7 +2539,6 @@ rich-text {
 
 .indexCoin text {
   color: #F54029;
-  font-size: 40upx;
   display: inline-block;
   margin-left: 20upx;
   display: flex;

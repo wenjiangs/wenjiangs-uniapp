@@ -8,6 +8,7 @@ export default {
       page: 0,
       rows: 10,
       svHeight: 0,
+      noMore: false,
     }
   },
   onLoad(options){
@@ -33,7 +34,7 @@ export default {
       })
       this.wjPost(this, 'getCategories', {
         page: this.page,
-        rows: 10,
+        rows: this.rows,
         taxonomy: 'docs'
       }, (res)=>{
         this.isLoading = false;

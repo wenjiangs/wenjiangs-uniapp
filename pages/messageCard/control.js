@@ -61,7 +61,7 @@ export default {
           }
         })
         
-        this.dataList = res.data;
+        this.dataList.push(...res.data);
         if(res.data.length<this.rows){
           this.noMore = true;
         }
