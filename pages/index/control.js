@@ -1,11 +1,13 @@
 export default {
   data() {
     return {
-      indicatorDots: true,
-      autoplay: true,
-      interval: 5000,
-      duration: 200,
-      circular: true,
+      bannerSwiperOpt: {
+        indicatorDots: true,
+        autoplay: true,
+        interval: 5000,
+        duration: 200,
+        circular: true,
+      },
       banner: {},
       bannerH: 0,
       bannerW: 0,
@@ -24,6 +26,9 @@ export default {
       httWidth: 0,
       ttHeight: 0,
       searchWidth: 0,
+
+      indexDocs: [],
+
     }
   },
   onLoad(options) {
@@ -40,6 +45,12 @@ export default {
       this.category = category;
     } else {
       this.getCats();
+    }
+    var indexDocs = this.wjGL('indexDocs');
+    if (indexDocs) {
+      this.indexDocs = indexDocs;
+    } else {
+      this.getDocs();
     }
 
     this.getInitPost();
@@ -194,6 +205,17 @@ export default {
         }
       });
       // #endif
+    },
+
+    getDocs() {
+      this.wjPost(this, 'getCategories', {
+        page: 1,
+        rows: 10,
+        taxonomy: 'docs'
+      }, (res) => {
+        this.indexDocs = res.data;
+        this.wjSL('indexDocs', this.indexDocs);
+      })
     }
   },
   onShareAppMessage() {

@@ -77,6 +77,37 @@ uni-page-head .uni-btn-icon {
   display: block;
 }
 
+.indexDocsList {
+  padding: 30upx 0;
+}
+
+.indexDocsSwiper {
+  text-align: center;
+  font-size: 26upx;
+  height: 170upx;
+}
+
+.indexDocsSwiper img {
+  height: 120upx;
+  width: 120upx;
+  border-radius: 120upx;
+}
+
+.idlText {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-top: 10upx;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; */
+  color: #666;
+  width: 120upx;
+  margin: 0 auto;
+}
+
 /* Tab标签页 */
 .tabBox {
   height: calc(88upx + 1px);
@@ -112,7 +143,7 @@ uni-page-head .uni-btn-icon {
   top: 0;
   width: 100%;
   /* #ifdef H5 */
-  top: 40px;
+  top: 45px;
   /* #endif */
 }
 
@@ -129,7 +160,7 @@ uni-page-head .uni-btn-icon {
 }
 
 .plTitle {
-  font-size: 36upx;
+  font-size: 32upx;
   font-weight: 500;
   position: relative;
   color: #333;
@@ -139,7 +170,6 @@ uni-page-head .uni-btn-icon {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-weight: 500;
 }
 
 .wjModel {
@@ -352,8 +382,8 @@ uni-page-head .uni-btn-icon {
 
 .wjModTilte {
   overflow: hidden;
-  font-size: 36upx;
-  padding: 28upx 30upx 24upx;
+  font-size: 32upx;
+  padding: 20upx 30upx 16upx;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -2486,42 +2516,95 @@ rich-text {
   right: 0;
 }
 
-.goodsListNormal{
+.goodsListNormal {
   overflow: hidden;
 }
 
-.goodsLIstItemNormal{
+.goodsLIstItemNormal {
   margin: 30upx;
   width: 330upx;
   float: left;
   text-align: center;
 }
 
-.glinImage{
+.glinImage {
   width: 330upx;
   height: 330upx;
 }
-.glinImage img{
+
+.glinImage img {
   width: 330upx;
   height: 330upx;
 }
-.goodsLIstItemNormal:nth-child(2n){
+
+.goodsLIstItemNormal:nth-child(2n) {
   margin-left: 0;
 }
-.glinTit{
+
+.glinTit {
   font-size: 34upx;
   padding: 16upx 0 4upx;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.glinPreces{
+
+.glinPreces {
   font-size: 28upx;
   color: #f54029;
 }
-.glinPreces text{
+
+.glinPreces text {
   font-size: 34upx;
   font-weight: bold;
   display: inline-block;
   margin-right: 4upx;
+}
+
+.indexCoin {
+  margin: 10upx 0;
+  background: #FFF;
+  padding: 30upx;
+  font-size: 32upx;
+}
+
+.indexCoin text {
+  color: #F54029;
+  font-size: 40upx;
+  display: inline-block;
+  margin-left: 20upx;
+  display: flex;
+  align-items: center;
+  height: 50upx;
+}
+
+.icText {
+  height: 50upx;
+  display: flex;
+  align-items: center;
+}
+
+.icText i {
+  display: inline-block;
+  font-size: 28upx;
+  vertical-align: middle;
+}
+
+.ucListItem{
+  background: #FFF;
+  font-size: 28upx;
+  padding: 20upx 30upx;
+  border-bottom: 1px solid #EEE;
+}
+.uclDate{
+  color: #999;
+  font-size: 24upx;
+  padding-top: 8upx;
+}
+.uclTit{
+  font-weight: bold;
+  color: #333;
+}
+.uclVal.active{
+  color: #F54029;
 }

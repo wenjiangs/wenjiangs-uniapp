@@ -27,7 +27,7 @@ const methods = {
     }
   },
   wjRouterSwitchTab(params) {
-    uni.navigateTo({
+    uni.switchTab({
       url: "/pages/" + params + "/view"
     })
   },

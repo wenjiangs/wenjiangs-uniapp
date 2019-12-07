@@ -1,6 +1,8 @@
 export default {
   data() {
-		return {}
+		return {
+      noMore: false,
+    }
   },
   onLoad(options){
     
