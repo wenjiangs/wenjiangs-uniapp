@@ -28,6 +28,7 @@ export default {
       searchWidth: 0,
 
       indexDocs: [],
+      userInfo: {},
 
     }
   },
@@ -87,8 +88,11 @@ export default {
     setTimeout(() => {
       this.caleTabTop();
     }, 500)
-    // #ifdef H5 || APP-PLUS
     let userInfo = uni.getStorageSync('userInfo');
+    if (userInfo) {
+      this.userInfo = userInfo;
+    }
+    // #ifdef H5 || APP-PLUS
     if (userInfo) {
       this.getUnreadNum();
     }

@@ -26,9 +26,9 @@
       </view>
       
       <!-- 我的金币 -->
-      <view class="indexCoin">
+      <view class="indexCoin" v-if="!isEmpty(userInfo)">
         <view @click="wjRouterPush('userCoin')" class="pull-right btn btn-primary btn-radius btn-small">赚金币</view>
-        <view class="icText">我的金币 <text @click="wjRouterPush('userCoinList')">1542 <i class="wjsp wjsp-right"></i></text></view>
+        <view class="icText">我的金币 <text @click="wjRouterPush('userCoinList')">{{userInfo.user_coin}} <i class="wjsp wjsp-right"></i></text></view>
       </view>
 
       <!-- 推荐专栏 -->

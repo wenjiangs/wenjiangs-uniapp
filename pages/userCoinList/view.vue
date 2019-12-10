@@ -6,7 +6,7 @@
         @scrolltolower="loadData">
         <view class="ucList">
           <view class="ucListItem" v-for="(item, index) in dataList" :key="index">
-            <view class="uclVal pull-right" :class="item.integral_value>0?'active':''">{{item.integral_value}}</view>
+            <view class="uclVal pull-right" :class="item.integral_value>0?'active':''">{{item.integral_value>0?'+':'-'}}{{item.integral_value}}</view>
             <view class="uclTit">{{item.integral_remarks}}</view>
             <view class="uclDate">{{item.integral_date}}</view>
           </view>
