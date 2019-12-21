@@ -11,7 +11,7 @@
             <view class="uclDate">{{item.integral_date}}</view>
           </view>
         </view>
-        <uni-load-more :status="noMore?'noMore':'loading'"></uni-load-more>
+        <uni-load-more v-if="dataList.length" :status="noMore?'noMore':'loading'"></uni-load-more>
       </scroll-view>
     </view>
   </view>

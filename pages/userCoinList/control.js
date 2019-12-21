@@ -17,6 +17,7 @@ export default {
   methods:{
     loadData(){
       if (this.isLoading) return;
+      if (this.noMore) return;
       this.isLoading = true;
       this.page++;
       uni.showLoading({

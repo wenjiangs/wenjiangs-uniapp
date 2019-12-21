@@ -1168,10 +1168,13 @@ button[type=primary] {
   background: #FFF;
   overflow: hidden;
 }
-
+.appName{
+  font-weight: bold;
+  font-size: 30upx;
+}
 .appVersion {
   padding-top: 8upx;
-  font-size: 24upx;
+  font-size: 28upx;
   color: #999;
 }
 
@@ -1725,7 +1728,7 @@ rich-text {
   border-radius: 2px;
 }
 
-.rich-ul {
+.rich-ul, .rich-ol {
   padding-left: 52upx;
   font-size: 30upx;
   margin: 20upx 0;
@@ -2575,4 +2578,19 @@ rich-text {
 }
 .uclVal.active{
   color: #F54029;
+}
+.gsTop{
+  background: #FFF;
+  overflow: hidden;
+}
+.goodsBnnaer, .goodsBnnaer img{
+  height: 750upx;
+  width: 750upx;
+}
+.gsTop .goodsPrices{
+  margin: 30upx 30upx 10upx;
+}
+.goodsName{
+  margin: 10upx 30upx 30upx;
+  font-size: 30upx;
 }

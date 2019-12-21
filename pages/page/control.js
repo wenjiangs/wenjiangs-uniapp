@@ -37,8 +37,8 @@ export default {
       for(let i=0; i<this.pages.length; i++){
         if(this.pages[i].ID == this.pageID){
           uni.setNavigationBarTitle({ title: this.pages[i].title })
-          this.content = this.pages[i].content;
-          parse(this.addClassToHtml(this.content), (err, nodes) => {
+          this.content = this.addClassToHtml(this.pages[i].content);
+          parse(this.content, (err, nodes) => {
             if (!err) {
               this.contentNodes = nodes;
             }
