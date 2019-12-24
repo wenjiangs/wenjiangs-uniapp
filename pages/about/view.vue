@@ -15,9 +15,11 @@
           v-for="(item, index) in pages" :key="index">
           <view class="wjListText">{{item.title}}</view>
         </view>
+        <!-- #ifdef H5 || APP-PLUS -->
         <view class="wjListCell" @click="wjRouterPush('feedBack')">
           <view class="wjListText">服务与反馈</view>
         </view>
+        <!-- #endif -->
       </view>
     </view>
   </view>

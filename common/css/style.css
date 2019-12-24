@@ -280,6 +280,15 @@ uni-page-head .uni-btn-icon {
   font-size: 24upx;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
+}
+.shareButton{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
 
 .singleToolsItem i {
@@ -964,8 +973,6 @@ button[type=primary] {
 
 .tiFooter i {
   display: inline-block;
-  position: relative;
-  top: -1rpx;
   font-size: 32rpx;
   vertical-align: middle;
   margin-right: 8upx;
@@ -1091,23 +1098,29 @@ button[type=primary] {
   background: #FFF;
 }
 
-.bbItem{
+.bbItem {
   flex: 1;
   text-align: center;
   font-size: 24upx;
 }
-.borderTop{
+
+.borderTop {
   border-top: 1px solid #EEE;
   box-sizing: border-box;
 }
-.bbItem.active{
+
+.bbItem.active {
   color: #00A0E9;
 }
-.bbIcon{
+
+.bbIcon {
   padding: 8upx 0 2upx;
-  
+
 }
-.bbIcon i{ font-size: 40upx; }
+
+.bbIcon i {
+  font-size: 40upx;
+}
 
 .bottomButton .btn {
   border-radius: 0;
@@ -2636,10 +2649,12 @@ rich-text {
   border-bottom: 1px solid #EEE;
   box-sizing: border-box;
 }
-.fbTop~.content{
+
+.fbTop~.content {
   top: 102upx;
 }
-.fbtIcon{
+
+.fbtIcon {
   position: absolute;
   color: #666;
   font-size: 32upx;
@@ -2648,7 +2663,8 @@ rich-text {
   align-items: center;
   left: 36px;
 }
-.fbTop input{
+
+.fbTop input {
   background: #F6F6F6;
   width: calc(100% - 60upx);
   margin-left: 30upx;
@@ -2659,7 +2675,7 @@ rich-text {
   box-sizing: border-box;
 }
 
-.fbBtn{
+.fbBtn {
   position: fixed;
   bottom: 130upx;
   width: 180upx;

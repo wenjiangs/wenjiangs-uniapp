@@ -1,7 +1,9 @@
 export default {
   data() {
 		return {
-      systemInfo: {},
+      systemInfo: {
+        version: '0.0.0'
+      },
       pages: [],
     }
   },

@@ -25,11 +25,13 @@
         </swiper>
       </view>
       
+      <!-- #ifdef H5 || APP-PLUS -->
       <!-- 我的金币 -->
       <view class="indexCoin" v-if="!isEmpty(userInfo)">
         <view @click="wjRouterPush('userCoin')" class="pull-right btn btn-primary btn-radius btn-small">赚金币</view>
         <view class="icText">我的金币 <text @click="wjRouterPush('userCoinList')">{{userInfo.user_coin}} <i class="wjsp wjsp-right"></i></text></view>
       </view>
+      <!-- #endif -->
 
       <!-- 推荐专栏 -->
       <view class="wjMod">

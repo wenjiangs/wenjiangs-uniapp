@@ -9,9 +9,12 @@
       <view class="singleToolsItem" @click="doCategoryCollection">
         <i class="wjsp wjsp-xin"></i>{{collectionText}} {{docsSingle.collection}}
       </view>
-      <!-- <view class="singleToolsItem">
+      <!-- #ifdef MP-WEIXIN || MP-QQ -->
+      <view class="singleToolsItem">
+        <button open-type="share" class="shareButton"></button>
         <i class="wjsp wjsp-iconfontfenxiang"></i>分享
-      </view> -->
+      </view>
+      <!-- #endif -->
     </view>
     <view class="maskBg" v-if="showMask" @click="hidePopup"></view>
     <view class="publishComment" v-if="showCF">

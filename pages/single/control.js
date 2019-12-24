@@ -3,7 +3,11 @@ import parse from 'mini-html-parser2';
 export default {
   data() {
     return {
-      post: [],
+      post: {
+        collection: 0,
+        word_count: 0,
+        views: 0
+      },
       comment: [],
       windowWidth: 0,
       scrollViewHeight: 0,

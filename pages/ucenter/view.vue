@@ -16,26 +16,33 @@
         <view class="uID">查看个人主页</view>
       </view>
       <view class="uFastTools">
+        <!-- #ifdef H5 || APP-PLUS -->
         <view class="uftItem" @click="wjRouterPush('userPost')">
           <view class="uftiT">文章</view>
           <view class="uftiN">{{userInfo.post_count}}</view>
         </view>
+        <!-- #endif -->
         <view class="uftItem" @click="wjRouterPush('userCollection')">
           <view class="uftiT">收藏</view>
           <view class="uftiN">{{userInfo.collection_count}}</view>
         </view>
+        <!-- #ifdef H5 || APP-PLUS -->
         <view class="uftItem" @click="wjRouterPush('userFans')">
           <view class="uftiT">粉丝</view>
           <view class="uftiN">{{userInfo.fans_count}}</view>
         </view>
+        <!-- #endif -->
         <view class="uftItem">
           <view class="uftiT">人气</view>
           <view class="uftiN">{{userInfo.views}}</view>
         </view>
       </view>
+      <!-- #ifdef H5 || APP-PLUS -->
       <view class="lookCoin" @click="wjRouterPush('userCoin')">
-        <img src="http://www.wenjiangs.com/wp-content/uploads/2019/11/lookCoin.jpg"/>
+        <img mode="widthFix" src="http://www.wenjiangs.com/wp-content/uploads/2019/11/lookCoin.jpg"/>
       </view>
+      <!-- #endif -->
+      <!-- #ifdef H5 || APP-PLUS -->
       <view class="uList">
        <view class="wjList">
           <view class="wjListCell" @click="wjRouterPush('userPost')">
@@ -75,6 +82,7 @@
             </view>
           </view>
         </view>
+        <!-- #endif -->
         <view class="wjList">
           <view class="wjListCell" @click="wjRouterPush('userCollection')">
             <view class="wjListIcon">

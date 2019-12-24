@@ -41,9 +41,12 @@
 		      <view class="singleToolsItem" @click.stop="doCollection(item, index)">
 		        <i class="wjsp wjsp-xin"></i> <span>{{item.collection_current?'已收藏':'收藏'}} {{item.collection}}</span>
 		      </view>
-		      <!-- <view class="singleToolsItem" @click="sharePost">
-		        <i class="wjsp wjsp-iconfontfenxiang"></i> <span>分享</span>
-		      </view> -->
+		      <!-- #ifdef MP-WEIXIN || MP-QQ -->
+		      <view class="singleToolsItem" @click.stop>
+		        <button open-type="share" class="shareButton"></button>
+		        <i class="wjsp wjsp-iconfontfenxiang"></i>分享
+		      </view>
+		      <!-- #endif -->
 		    </view>
 		  </view>
 		</view>
