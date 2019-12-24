@@ -115,7 +115,7 @@ uni-page-head .uni-btn-icon {
 .tabBox {
   height: calc(88upx + 1px);
   position: relative;
-  z-index: 6000;
+  z-index: 500;
 }
 
 .tabs {
@@ -162,7 +162,7 @@ uni-page-head .uni-btn-icon {
   background: #FFF;
 }
 
-.postItem:last-child{
+.postItem:last-child {
   border-bottom: none;
 }
 
@@ -350,7 +350,7 @@ uni-page-head .uni-btn-icon {
 .singleTitle {
   font-size: 40upx;
   padding: 12upx 24upx 24upx;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .singleContent {
@@ -1086,7 +1086,28 @@ button[type=primary] {
   position: absolute;
   bottom: 0;
   width: 100%;
+  display: flex;
+  height: 100upx;
+  background: #FFF;
 }
+
+.bbItem{
+  flex: 1;
+  text-align: center;
+  font-size: 24upx;
+}
+.borderTop{
+  border-top: 1px solid #EEE;
+  box-sizing: border-box;
+}
+.bbItem.active{
+  color: #00A0E9;
+}
+.bbIcon{
+  padding: 8upx 0 2upx;
+  
+}
+.bbIcon i{ font-size: 40upx; }
 
 .bottomButton .btn {
   border-radius: 0;
@@ -1125,7 +1146,7 @@ button[type=primary] {
 }
 
 .bottomButton~.content {
-  bottom: 82upx;
+  bottom: 100upx;
 }
 
 .wjListCellNoRight {
@@ -1168,10 +1189,12 @@ button[type=primary] {
   background: #FFF;
   overflow: hidden;
 }
-.appName{
+
+.appName {
   font-weight: bold;
   font-size: 30upx;
 }
+
 .appVersion {
   padding-top: 8upx;
   font-size: 28upx;
@@ -1687,24 +1710,24 @@ rich-text {
 }
 
 .rich-h1 {
-  font-size: 46upx;
+  font-size: 40upx;
   margin: 20upx 0;
 }
 
 .rich-h2 {
-  font-size: 42upx;
+  font-size: 36upx;
   margin: 20upx 0;
 }
 
 .rich-h3 {
-  font-size: 38upx;
+  font-size: 32upx;
   margin: 20upx 0;
 }
 
 .rich-h4,
 .rich-h5,
 .rich-h6 {
-  font-size: 32upx;
+  font-size: 30upx;
   margin: 20upx 0;
 }
 
@@ -1728,9 +1751,10 @@ rich-text {
   border-radius: 2px;
 }
 
-.rich-ul, .rich-ol {
+.rich-ul,
+.rich-ol {
   padding-left: 52upx;
-  font-size: 30upx;
+  font-size: 28upx;
   margin: 20upx 0;
   line-height: 46upx;
 }
@@ -2561,36 +2585,85 @@ rich-text {
   vertical-align: middle;
 }
 
-.ucListItem{
+.ucListItem {
   background: #FFF;
   font-size: 28upx;
   padding: 20upx 30upx;
   border-bottom: 1px solid #EEE;
 }
-.uclDate{
+
+.uclDate {
   color: #999;
   font-size: 24upx;
   padding-top: 8upx;
 }
-.uclTit{
+
+.uclTit {
   font-weight: bold;
   color: #333;
 }
-.uclVal.active{
+
+.uclVal.active {
   color: #F54029;
 }
-.gsTop{
+
+.gsTop {
   background: #FFF;
   overflow: hidden;
 }
-.goodsBnnaer, .goodsBnnaer img{
+
+.goodsBnnaer,
+.goodsBnnaer img {
   height: 750upx;
   width: 750upx;
 }
-.gsTop .goodsPrices{
+
+.gsTop .goodsPrices {
   margin: 30upx 30upx 10upx;
 }
-.goodsName{
+
+.goodsName {
   margin: 10upx 30upx 30upx;
   font-size: 30upx;
+}
+
+.fbTop {
+  background: #FFF;
+  position: absolute;
+  padding: 20upx;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #EEE;
+  box-sizing: border-box;
+}
+.fbTop~.content{
+  top: 102upx;
+}
+.fbtIcon{
+  position: absolute;
+  color: #666;
+  font-size: 32upx;
+  height: 60upx;
+  display: flex;
+  align-items: center;
+  left: 36px;
+}
+.fbTop input{
+  background: #F6F6F6;
+  width: calc(100% - 60upx);
+  margin-left: 30upx;
+  height: 60upx;
+  font-size: 28upx;
+  border-radius: 30upx;
+  padding: 0 30upx 0 70upx;
+  box-sizing: border-box;
+}
+
+.fbBtn{
+  position: fixed;
+  bottom: 130upx;
+  width: 180upx;
+  left: calc(50% - 90upx);
+  height: 60upx;
+  line-height: 52upx;
 }

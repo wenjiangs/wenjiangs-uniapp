@@ -229,6 +229,11 @@
         "navigationBarBackgroundColor": "#303030",
         "navigationBarTextStyle": "white"
       }
+    },{
+      "path": "pages/feedBack/view",
+      "style": {
+        "navigationBarTitleText": "服务与反馈"
+      }
     }
   ],
   "globalStyle": {

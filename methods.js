@@ -324,9 +324,9 @@ const methods = {
     str = str.replace(/<img/gi, '<img class="rich-img"');
     str = str.replace(/<code/gi, '<code class="rich-code"');
     str = str.replace(/<ul/gi, '<ul class="rich-ul"');
-    str = str.replace(/<ol/gi, '<ul class="rich-ol"');
-    str = str.replace(/<pre/gi, '<div class="rich-pre"');
-    str = str.replace(/<\/pre>/gi, '</div>');
+    str = str.replace(/<ol/gi, '<ol class="rich-ol"');
+    str = str.replace(/<pre/gi, '<pre class="rich-pre"');
+    str = str.replace(/<\/pre>/gi, '</pre>');
     str = str.replace(/<table/gi, '<table class="rich-table"');
     str = str.replace(/<thead>/gi, '<thead class="rich-thead">');
     str = str.replace(/<tr/gi, '<tr class="rich-tr"');
