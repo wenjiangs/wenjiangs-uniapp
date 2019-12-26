@@ -8,7 +8,9 @@
           <view class="searchForm" :style="'width:'+httWidth+'px;'">
             <view class="sweep sweepSearch" @click="wjRouterPush('search')"><i class="wjsp wjsp-sousuo"></i></view>
             <view class="sweep sweepScan" @click="doScan"><i class="wjsp wjsp-saomazhuanhuan"></i></view>
+            <!-- #ifdef H5 || APP-PLUS -->
             <view class="sweep sweepMessage" @click="wjRouterPush('message')"><i class="wjsp wjsp-liaotian2"></i></view>
+            <!-- #endif -->
           </view>
         </view>
       </view>

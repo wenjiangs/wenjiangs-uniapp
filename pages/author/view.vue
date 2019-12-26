@@ -21,10 +21,12 @@
       <view class="btn btn-success pull-left" @click="doCollection" v-else>
         <i class="wjsp wjsp-jia"></i> <view>加关注</view>
       </view>
+      <!-- #ifdef H5 || APP-PLUS -->
       <view class="btn btn-success btn-empty pull-left"
         @click="wjRouterPush({path:'messageSingle', query:{id:author.ID}})">
         <i class="wjsp wjsp-xiaoxi"></i> <view>发信息</view>
       </view>
+      <!-- #endif -->
       <view class="btn pull-right auDoMore" @click.stop="isShowMore"><i class="wjsp wjsp-liebiao"></i></view>
       <view class="dropDown" v-if="showMore">
         <view class="ddItem"
