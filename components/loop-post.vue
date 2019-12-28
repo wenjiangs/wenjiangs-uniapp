@@ -14,7 +14,9 @@
 		    </view>
 		    <view class="plMeta">
 		      <view class="wjModel">{{item.author_name}}</view>
+          <!-- #ifdef H5 || APP-PLUS -->
 		      <view class="wjModel">{{item.comment_count}} 评论</view>
+          <!-- #endif -->
 		      <view class="wjModel">{{item.views}} 浏览</view>
 		    </view>
 		  </view>

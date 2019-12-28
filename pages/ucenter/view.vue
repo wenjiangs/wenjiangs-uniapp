@@ -8,12 +8,17 @@
       </view>
     </view>
     <view class="content">
-      <view class="uHead" @click="wjRouterPush({path:'author',query:{id: userInfo.ID}})">
+      <view class="uHead" @click="toAuthor">
         <view class="uAvatar">
           <img :src="$imgUrl(userInfo.user_avatar)"/>
         </view>
         <view class="uName">{{userInfo.display_name}}</view>
+        <!-- #ifdef H5 || APP-PLUS -->
         <view class="uID">查看个人主页</view>
+        <!-- #endif -->
+        <!-- #ifndef H5 || APP-PLUS -->
+        <view class="uID">注册时间：{{userInfo.user_registered}}</view>
+        <!-- #endif -->
       </view>
       <view class="uFastTools">
         <!-- #ifdef H5 || APP-PLUS -->
@@ -96,12 +101,14 @@
         </view>
         
         <view class="wjList">
+          <!-- #ifdef H5 || APP-PLUS -->
           <view class="wjListCell" @click="wjRouterPush('setting')">
             <view class="wjListIcon">
               <view class="wjsp wjsp-shezhi2"></view>
             </view>
             <view class="wjListText">设置</view>
           </view>
+          <!-- #endif -->
           <view class="wjListCell" @click="wjRouterPush('about')">
             <view class="wjListIcon">
               <view class="wjsp wjsp-dingdan"></view>

@@ -60,11 +60,6 @@ export default {
         userID: this.userInfo.ID,
         postType: this.postType,
       }, (res) => {
-        // if(res.data.thumbnail.length){
-        //   res.data.thumbnail.forEach((item, index)=>{
-        //     res.data.content += '<p><img src="'+item+'"/></p>';
-        //   })
-        // }
         parse(this.addClassToHtml(res.data.content), (err, nodes) => {
           if (!err) {
             res.data.contentNodes = nodes;
@@ -246,6 +241,17 @@ export default {
       this.comment_parent = e.comment_ID;
       this.plaText = '回复 ' + e.comment_author;
       this.showCommentForm();
+    },
+
+    toAuthor() {
+      // #ifdef H5 || APP-PLUS
+      this.wjRouterPush({
+        path: 'author',
+        query: {
+          id: this.post.post_author
+        }
+      });
+      // #endif
     }
   }
 }

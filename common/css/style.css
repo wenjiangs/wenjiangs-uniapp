@@ -792,7 +792,7 @@ button[type=primary] {
   font-size: 36upx;
   color: #FD7700;
   padding-top: 4upx;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .wjList {

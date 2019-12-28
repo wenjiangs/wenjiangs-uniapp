@@ -3,10 +3,14 @@
     <view class="content">
       <view class="tabs">
         <view class="tabItem" :class="dataType==1?'active':''" @click="tabClick(1)">文章</view>
+        <!-- #ifdef H5 || APP-PLUS -->
         <view class="tabItem" :class="dataType==2?'active':''" @click="tabClick(2)">评论</view>
+        <!-- #endif -->
         <view class="tabItem" :class="dataType==3?'active':''" @click="tabClick(3)">专辑</view>
         <view class="tabItem" :class="dataType==4?'active':''" @click="tabClick(4)">话题</view>
+        <!-- #ifdef H5 || APP-PLUS -->
         <view class="tabItem" :class="dataType==5?'active':''" @click="tabClick(5)">回复</view>
+        <!-- #endif -->
       </view>
       <scroll-view
         scroll-y :style="'height:' + scrollViewHeight + 'px'"

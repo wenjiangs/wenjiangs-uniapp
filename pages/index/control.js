@@ -83,11 +83,13 @@ export default {
     })
     // #endif
     // 控制转发 end
-  },
-  onShow() {
+    
     setTimeout(() => {
       this.caleTabTop();
     }, 500)
+    
+  },
+  onShow() {
     let userInfo = uni.getStorageSync('userInfo');
     if (userInfo) {
       this.userInfo = userInfo;

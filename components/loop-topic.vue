@@ -35,9 +35,11 @@
 		      </view>
 		    </view>
 		    <view class="singleTools tiFooter">
+          <!-- #ifdef H5 || APP-PLUS -->
 		      <view class="singleToolsItem">
 		        <i class="wjsp wjsp-xiaoxi"></i> <span>评论 {{item.comment_count}}</span>
 		      </view>
+          <!-- #endif -->
 		      <view class="singleToolsItem" @click.stop="doCollection(item, index)">
 		        <i class="wjsp wjsp-xin"></i> <span>{{item.collection_current?'已收藏':'收藏'}} {{item.collection}}</span>
 		      </view>

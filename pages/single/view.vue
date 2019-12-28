@@ -44,7 +44,7 @@
       >
       <view class="singleHead">
         <view class="singleTitle">{{post.title}}</view>
-        <view class="tiTop singTop" @click="wjRouterPush({path:'author', query:{id:post.post_author}})">
+        <view class="tiTop singTop" @click="toAuthor">
           <view class="titAvatar pull-left">
             <image :src="post.author_avatar" mode="aspectFill"/>
           </view>
@@ -75,6 +75,7 @@
         <loop-post :posts="relevantPosts" :showLoading="false"></loop-post>
       </view>
 
+      <!-- #ifdef H5 || APP-PLUS -->
       <view class="wjMod">
         <view class="wjModTilte">
           <view class="wjModTilteTxt">全部评论（{{post.comment_count}}）</view>
@@ -89,6 +90,7 @@
         >
         </loop-comment>
       </view>
+      <!-- #endif -->
       </scroll-view>
     </view>
   </view>

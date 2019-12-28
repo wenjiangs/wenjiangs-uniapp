@@ -39,5 +39,15 @@ export default {
   onLoad() {
   },
   methods: {
+    toAuthor() {
+      // #ifdef H5 || APP-PLUS
+      this.wjRouterPush({
+        path: 'author',
+        query: {
+          id: this.userInfo.ID
+        }
+      });
+      // #endif
+    }
   }
 }
