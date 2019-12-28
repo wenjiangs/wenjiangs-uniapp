@@ -42,10 +42,10 @@
 		        <i class="wjsp wjsp-xin"></i> <span>{{item.collection_current?'已收藏':'收藏'}} {{item.collection}}</span>
 		      </view>
 		      <!-- #ifdef MP-WEIXIN || MP-QQ -->
-		      <view class="singleToolsItem" @click.stop>
+		      <!-- <view class="singleToolsItem" @click.stop>
 		        <button open-type="share" class="shareButton"></button>
 		        <i class="wjsp wjsp-iconfontfenxiang"></i>分享
-		      </view>
+		      </view> -->
 		      <!-- #endif -->
 		    </view>
 		  </view>

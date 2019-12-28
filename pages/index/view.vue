@@ -42,7 +42,7 @@
           <view class="wjModTilteTxt">最新专栏</view>
         </view>
         <view class="indexDocsList">
-          <swiper class="indexDocsSwiper" next-margin="30px" v-if="indexDocs.length" display-multiple-items="4">
+          <swiper class="indexDocsSwiper" next-margin="30px" v-if="indexDocs.length" display-multiple-items="5">
             <swiper-item v-for="(item, index) in indexDocs" :key="index">
               <view class="swiper-item" @click="wjRouterPush({path: 'docsSingle', query: {id: item.term_id}})">
                 <img :src="item.cover">
@@ -53,7 +53,7 @@
         </view>
       </view>
 
-      <view class="tabBox">
+      <view class="tabBox" id="tabBox">
         <view class="tabs isFullpage" :style="'top:'+ttHeight+'px'" :class="sTop>tabTop?'tabFixed':''" id="tabAffix">
           <view class="tabItem" :class="catIndexID==item.term_id?'active':''" v-for="(item, index) in category" :key="index"
             @click="clickTabs(item.term_id)">{{item.name}}</view>

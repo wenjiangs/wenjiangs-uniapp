@@ -10,10 +10,10 @@
         <i class="wjsp wjsp-xin"></i>{{collectionText}} {{post.collection}}
       </view>
       <!-- #ifdef MP-WEIXIN || MP-QQ -->
-      <view class="singleToolsItem">
+      <!-- <view class="singleToolsItem">
         <button open-type="share" class="shareButton"></button>
         <i class="wjsp wjsp-iconfontfenxiang"></i>分享
-      </view>
+      </view> -->
       <!-- #endif -->
       <view class="singleToolsItem" @click="toTrash" v-if="userInfo.ID==post.post_author">
         <i class="wjsp wjsp-jiufuqianbaoicon05"></i>删除

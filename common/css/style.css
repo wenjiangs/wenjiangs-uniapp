@@ -86,8 +86,8 @@ uni-page-head .uni-btn-icon {
 
 .indexDocsSwiper {
   text-align: center;
-  font-size: 26upx;
-  height: 170upx;
+  font-size: 24upx;
+  height: 212upx;
 }
 
 .indexDocsSwiper img {
@@ -97,18 +97,16 @@ uni-page-head .uni-btn-icon {
 }
 
 .idlText {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   padding-top: 10upx;
-  /* overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical; */
+  -webkit-box-orient: vertical;
   color: #666;
   width: 120upx;
   margin: 0 auto;
+  line-height: 34upx;
 }
 
 /* Tab标签页 */
@@ -441,6 +439,7 @@ uni-page-head .uni-btn-icon {
 .titText .btn {
   border-radius: 3px;
   margin-top: 12upx;
+  font-weight: bold;
 }
 
 .btn {
@@ -675,7 +674,7 @@ button[type=primary] {
 .lrLogo img {
   width: 140upx;
   height: 140upx;
-  border-radius: 2rem;
+  border-radius: 140upx;
   display: block;
 }
 

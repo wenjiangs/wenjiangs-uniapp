@@ -10,10 +10,10 @@
         <i class="wjsp wjsp-xin"></i>{{collectionText}} {{docsSingle.collection}}
       </view>
       <!-- #ifdef MP-WEIXIN || MP-QQ -->
-      <view class="singleToolsItem">
+      <!-- <view class="singleToolsItem">
         <button open-type="share" class="shareButton"></button>
         <i class="wjsp wjsp-iconfontfenxiang"></i>分享
-      </view>
+      </view> -->
       <!-- #endif -->
     </view>
     <view class="maskBg" v-if="showMask" @click="hidePopup"></view>

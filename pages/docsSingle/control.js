@@ -4,7 +4,12 @@ export default {
   data() {
 		return {
       docsID: 0,
-      docsSingle: [],
+      docsSingle: {
+        collection: 0,
+        views: 0,
+        count: 0,
+        comment_count: 0,
+      },
       cType: 1,
       
       postPage: 0,
@@ -44,7 +49,7 @@ export default {
     this.userInfo = uni.getStorageSync('userInfo');
     this.docsID = options.id;
     var wInfo = uni.getSystemInfoSync();
-    this.svHeight = wInfo.windowHeight - wInfo.windowWidth/750*88;
+    this.svHeight = wInfo.windowHeight - wInfo.windowWidth/750*100 - 1;
     this.loadData();
     this.getDocsPost();
     this.getCategoryComment();

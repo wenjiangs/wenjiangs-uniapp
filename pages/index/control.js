@@ -167,7 +167,7 @@ export default {
     },
     caleTabTop() {
       var query = wx.createSelectorQuery()
-      query.select('#tabAffix').boundingClientRect()
+      query.select('#tabBox').boundingClientRect()
       query.exec((res) => {
         this.tabTop = res[0].top;
       })

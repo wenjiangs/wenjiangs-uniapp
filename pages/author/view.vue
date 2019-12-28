@@ -33,10 +33,10 @@
           @click="wjRouterPush({path:'profile', query:{id:author.ID}})">
           <i class="wjsp wjsp-File"></i> 查看资料</view>
         <!-- #ifdef MP-WEIXIN -->
-        <view class="ddItem ddItemShare">
+        <!-- <view class="ddItem ddItemShare">
           <button data-type="share"></button>
           <i class="wjsp wjsp-iconfontfenxiang"></i> 推荐给好友
-        </view>
+        </view> -->
         <!-- #endif -->
         <view class="ddItem" @click="wjRouterPush({path:'report', query:{type:'user', id: author_id}})">
           <i class="wjsp wjsp-xianshi_jinggao"></i> 举报
